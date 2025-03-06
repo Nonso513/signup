@@ -98,7 +98,7 @@ const app = express();
 app.use(express.json());
 
 app.post("/verify-recaptcha", async (req, res) => {
-    const secretKey = "6Lfze-sqAAAAAKJ8srVzyeU-0VnO9tnEsqLFwNB4";
+    const secretKey = "6Le9pOsqAAAAAKNe5luMiv5i4_X60JEYJSC1N8BI";
     const { recaptchaResponse } = req.body;
 
     const response = await axios.post(`https://www.google.com/recaptcha/api/siteverify`, null, {
